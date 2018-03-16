@@ -19,7 +19,7 @@ FROM OrderHead;
 
 /*2. A query that uses aggregate function.*/
 SELECT
-(Store.StoreName) AS 'Store', (Store.StoreState) AS 'State'
+COUNT(Store.StoreName) AS 'StoreInMA'
 FROM Store
 WHERE StoreState = 'MA';
 
